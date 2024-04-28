@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Style.css"/>
+  <title>Wireless</title>
+  </head>
+   <body>
+    <div class="questionnaire">
+    <h1 id="title">Wireless</h1>
+    <p id="description">Fill out the survey to connect to the cafe network.</p>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label id="name-label">First Name:<input id="name" name="name" type="text" placeholder="Enter your first name" required /></label>
+            <label id="last-name">Last Name:<input id="last-name" name="last-name" type="text" placeholder="Enter your last name" required /></label>
+            <label id="email-label">Email:<input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+            <label id="number-label">Age:<input id="number" name="number" type="number" placeholder="Enter your age" required /></label>
+            <label id="telephone">Telephone Number:<input id="telephone" name="telephone" type="text" placeholder="Enter your telephone number" required /></label>
+        </fieldset>
+        <fieldset>
+            <legend>How satisfied are you with our service?(required)</legend>
+            <label for="very-little"><input id="very-little" type="radio" name="radio" class="inline" value="1" checked />Very Little</label>
+            <label for="little"><input id="little" type="radio" name="radio" class="inline" value="2" >Little</label>
+            <label for="much"><input id="much" type="radio" name="radio" class="inline" value="3" >Much</label>
+            <label for="to-much"><input id="to-much" type="radio" name="radio" class="inline" value="4" >To Much</label>
+        </fieldset>
+        <fieldset>
+          <label for="referrer">How did you hear about us?<select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+             <option value="1">Friend</option>
+             <option value="2">Social Media</option>
+             <option value="3">Coincidence</option>
+             <option value="4">Other</option>
+           </select>
+         </label>
+         <label for="opinion">You can give your opinions :) Have fun.
+           <textarea id="opinion" name="opinion" rows="3" cols="30"></textarea>
+           </label>
+          </fiedset>
+        <label for="agreement">
+          <input class="inline" id="agreement" type="checkbox" required name="agreement" value="1" />I have read and accept the <a href="https://www.cafecamp.org">internet usage agreement</a>          
+        </label>
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </diV>
+  </body>
+  </html>
